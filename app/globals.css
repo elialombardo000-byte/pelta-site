@@ -1,36 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Reset minimo */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Base layout */
 body {
-  background-color: #020617; /* slate-950 */
-  color: #e2e8f0; /* slate-200 */
-  font-family: system-ui, -apple-system, sans-serif;
+  background: #020617;
+  color: #e2e8f0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Migliora leggibilità */
-h1, h2, h3 {
-  color: white;
-}
-
-/* Button migliorati */
-button {
-  transition: all 0.2s ease;
-}
-
-button:hover {
-  transform: translateY(-1px);
+a {
+  text-decoration: none;
 }
