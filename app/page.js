@@ -13,6 +13,18 @@ export default function Home() {
       image: "/shield.png",
     },
     {
+      title: "Sicurezza Stradale",
+      description:
+        "Individuazione delle condizioni di rischio e supporto alle strategie di prevenzione degli incidenti.",
+      image: "/shield.png",
+    },
+    {
+      title: "Sicurezza sul Lavoro",
+      description:
+        "Analisi delle dinamiche operative e individuazione delle condizioni che generano rischio negli ambienti di lavoro.",
+      image: "/shield.png",
+    },
+    {
       title: "Cyber Security",
       description:
         "Lettura dinamica del rischio cyber, individuazione di pattern anomali e supporto alla risposta preventiva.",
@@ -45,8 +57,9 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section id="home" className="px-6 py-24">
-        <div className="max-w-4xl mx-auto text-center">
+      <section id="home" className="px-6 py-24 text-center">
+        <div className="max-w-4xl mx-auto">
+
           <div className="mb-4 text-cyan-300 text-sm uppercase tracking-widest">
             Suite di soluzioni AI
           </div>
@@ -56,8 +69,8 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 text-lg text-slate-400">
-            PELTA® è una suite di soluzioni che consente di individuare pattern, riconoscere condizioni di rischio
-            e trasformare i dati in indicazioni operative.
+            PELTA® consente di individuare pattern, riconoscere condizioni di rischio
+            e trasformare i dati in decisioni operative concrete.
           </p>
 
           <div className="mt-8 flex justify-center gap-4 flex-wrap">
@@ -69,6 +82,7 @@ export default function Home() {
               Scopri le soluzioni
             </a>
           </div>
+
         </div>
       </section>
 
@@ -80,8 +94,9 @@ export default function Home() {
           </h2>
 
           <p className="text-slate-400 text-lg">
-            PELTA® è progettata per leggere sistemi complessi. Non analizza eventi isolati,
-            ma le condizioni che li generano, permettendo di anticipare il rischio e supportare decisioni operative.
+            PELTA® legge sistemi complessi. Non analizza eventi isolati,
+            ma le condizioni che li generano, permettendo di anticipare il rischio
+            e supportare decisioni operative.
           </p>
         </div>
       </section>
@@ -94,12 +109,19 @@ export default function Home() {
             Le soluzioni
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {solutions.map((item) => (
-              <div key={item.title} className="p-6 border border-white/10 rounded-xl">
+              <div
+                key={item.title}
+                className="p-6 border border-white/10 rounded-xl hover:border-cyan-400/30 transition"
+              >
                 <img src={item.image} alt={item.title} className="h-12 mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-slate-400">{item.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-slate-400">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -116,8 +138,8 @@ export default function Home() {
           </h2>
 
           <p className="text-slate-400 text-lg">
-            PELTA® si basa su un modello che individua le condizioni in cui gli eventi tendono a emergere.
-            Questo consente di passare da una logica reattiva a una logica preventiva.
+            Gli eventi non emergono dal nulla, ma quando il sistema raggiunge determinate condizioni.
+            PELTA® consente di leggere queste condizioni e trasformarle in azione.
           </p>
 
         </div>
@@ -130,7 +152,7 @@ export default function Home() {
         </h2>
 
         <p className="text-slate-400 mb-8">
-          Possiamo mostrarti la piattaforma e valutare insieme una sperimentazione.
+          Possiamo mostrarti la piattaforma e valutare una sperimentazione concreta.
         </p>
 
         <a
