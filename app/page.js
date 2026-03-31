@@ -3,7 +3,7 @@ export default function Home() {
     {
       title: "Sicurezza Urbana",
       description:
-        "Analisi del territorio, individuazione delle fasi di rischio e supporto alla pianificazione operativa.",
+        "Analisi del territorio, lettura delle fasi di rischio e supporto alla pianificazione operativa.",
       image: "/shield.png",
     },
     {
@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-200">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/85 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#home" className="flex items-center gap-3">
             <img src="/logo.png" alt="PELTA®" className="h-9 w-auto" />
@@ -73,7 +73,7 @@ export default function Home() {
       <main>
         <section
           id="home"
-          className="border-b border-white/10 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900"
+          className="border-b border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.08),transparent_30%),linear-gradient(to_bottom,#020617,#020617,#0f172a)]"
         >
           <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:items-center lg:py-28">
             <div>
@@ -81,7 +81,7 @@ export default function Home() {
                 Suite di soluzioni AI verticali
               </div>
 
-              <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
                 Intelligenza artificiale per leggere sistemi complessi e
                 supportare decisioni operative
               </h1>
@@ -89,8 +89,8 @@ export default function Home() {
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
                 PELTA® è una suite di soluzioni che applica un modello avanzato
                 di lettura dei sistemi per individuare pattern ricorrenti,
-                riconoscere condizioni di rischio e restituire indicazioni utili
-                per l’azione.
+                riconoscere condizioni di rischio e trasformare i dati in
+                indicazioni utili per l’azione.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -117,7 +117,7 @@ export default function Home() {
                     <div className="mt-2 text-2xl font-semibold text-white">
                       5+
                     </div>
-                    <div className="mt-2 text-sm text-slate-300">
+                    <div className="mt-2 text-sm leading-6 text-slate-300">
                       Urbana, retail, stradale, lavoro, cyber e altri contesti
                       ad alta variabilità
                     </div>
@@ -128,14 +128,14 @@ export default function Home() {
                     <div className="mt-2 text-2xl font-semibold text-white">
                       Predittivo
                     </div>
-                    <div className="mt-2 text-sm text-slate-300">
+                    <div className="mt-2 text-sm leading-6 text-slate-300">
                       Dalla lettura del sistema alla decisione operativa
                     </div>
                   </div>
 
                   <div className="rounded-2xl border border-white/10 bg-slate-950/80 p-5 sm:col-span-2">
                     <div className="text-sm text-slate-400">Focus</div>
-                    <div className="mt-2 text-xl font-semibold text-white">
+                    <div className="mt-2 text-xl font-semibold leading-8 text-white">
                       Non registra soltanto ciò che accade. Aiuta a capire dove
                       e quando agire.
                     </div>
@@ -167,7 +167,7 @@ export default function Home() {
               {pillars.map((item) => (
                 <div
                   key={item}
-                  className="rounded-2xl border border-white/10 bg-slate-900/60 p-6"
+                  className="rounded-2xl border border-white/10 bg-slate-900/60 p-6 shadow-lg shadow-black/20"
                 >
                   <p className="leading-7 text-slate-200">{item}</p>
                 </div>
@@ -196,7 +196,7 @@ export default function Home() {
               {solutions.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-[28px] border border-white/10 bg-slate-900/70 p-8 transition hover:border-cyan-400/30"
+                  className="rounded-[28px] border border-white/10 bg-slate-900/70 p-8 shadow-xl shadow-black/20 transition hover:border-cyan-400/30"
                 >
                   <img
                     src={item.image}
